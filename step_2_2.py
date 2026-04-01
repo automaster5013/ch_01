@@ -6,7 +6,8 @@ def get_total_filesize(base_dir: Path, pattern: str = "*") -> int:
     for fullpath in base_dir.glob(pattern):
         if fullpath.is_file():
             total_bytes += fullpath.stat().st_size
-        return total_bytes
+            
+    return total_bytes
 
 if __name__ == "__main__":
     base_dir = WORK_DIR
