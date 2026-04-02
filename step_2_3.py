@@ -6,7 +6,7 @@ OUT_2_3 = OUT_DIR / f"{Path(__file__).stem}.json"
 
 def dump_dirnames(base_dir: Path) -> None:
     dirs = []
-    for path in base_dir.iterdir():
+    for path in base_dir.iterdir():     # iterator = "그걸 순서대로 꺼내주는 장치"
         if path.is_dir():
             dirs.append(path.as_posix())
     dirs_sorted = sorted(dirs)
@@ -20,4 +20,8 @@ def load_dirnames() -> list[str]:
     return []
 
 if __name__ == "__main__":
-    pass
+    dump_dirnames(Path.home())
+
+
+
+
