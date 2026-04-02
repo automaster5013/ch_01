@@ -25,3 +25,5 @@ def load_filesize_per_dir() -> dict[str, int]:
 if __name__ == "__main__":
     dump_filesize_from_dirnames()
 
+##########################################################(폴더_크기_측정_실행)
+
