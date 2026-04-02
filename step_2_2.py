@@ -14,7 +14,5 @@ if __name__ == "__main__":
     filesize = get_total_filesize(base_dir, pattern="*")
     print(f"{base_dir.as_posix()=}, {filesize=} bytes")
 
-
-
-
+################################################################(폴더_크기_측정_소스코드)
 
