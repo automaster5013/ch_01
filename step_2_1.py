@@ -6,8 +6,5 @@ OUT_DIR = WORK_DIR / "output"
 if __name__ == "__main__":
     OUT_DIR.mkdir(exist_ok=True)
 
-
-
-
-
+#######################################(폴더_생성_소스코드)
 
